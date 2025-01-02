@@ -30,6 +30,8 @@ async def on_message(message):
 
 @bot.command()
 async def ping(ctx):
+  print('Message sent')
+  print(ctx)
   await ctx.send('help yourself')
 
 bot.run(TOKEN)
