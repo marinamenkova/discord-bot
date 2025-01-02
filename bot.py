@@ -12,8 +12,6 @@ TOKEN = os.getenv("DISCORD_TOKEN")
 
 bot=commands.Bot(command_prefix='!', intents=intents)
 
-print("Program started")
-
 @bot.event
 async def on_ready():
    print(f'{bot.user} has connected to discord!')
