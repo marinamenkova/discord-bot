@@ -4,10 +4,6 @@ import discord
 from dotenv import load_dotenv
 from discord.ext import commands
 
-
-import ssl
-ssl._create_default_https_context = ssl._create_unverified_context
-
 intents = discord.Intents.default()
 intents.message_content = True
 
